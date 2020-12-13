@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <title>Forethink 360VR Demo</title>
+    <title>OddEyeFactory Intro</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" id="metaViewport" content="user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover" data-tdv-general-scale="0.5"/>
-    <link rel="shortcut icon" href="favicon.ico?v=1606148452202">
-	<link rel="icon" sizes="32x32 16x16" href="favicon.ico?v=1606148452202">
-	<link rel="icon" type="image/png" sizes="16x16" href="misc/icon16.png?v=1606148452202">
-	<link rel="icon" type="image/png" sizes="32x32" href="misc/icon32.png?v=1606148452202">
-	<link rel="manifest" href="manifest.json?v=1606148452202">
+    <link rel="shortcut icon" href="favicon.ico?v=1607869930840">
+	<link rel="icon" sizes="48x48 32x32 16x16" href="favicon.ico?v=1607869930840">
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="misc/icon180.png?v=1607869930840">
+	<link rel="icon" type="image/png" sizes="16x16" href="misc/icon16.png?v=1607869930840">
+	<link rel="icon" type="image/png" sizes="32x32" href="misc/icon32.png?v=1607869930840">
+	<link rel="icon" type="image/png" sizes="192x192" href="misc/icon192.png?v=1607869930840">
+	<link rel="manifest" href="manifest.json?v=1607869930840">
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-config" content="browserconfig.xml">
-	<link rel="preload" href="script.js?v=1606148452202" as="script"/>
-	<link rel="preload" href="media/panorama_E670F5AB_F58C_3850_41C9_18DC1094692D_0/r/1/0_0.jpg?v=1606148452202" as="image"/>
-	<link rel="preload" href="media/panorama_E670F5AB_F58C_3850_41C9_18DC1094692D_0/l/1/0_0.jpg?v=1606148452202" as="image"/>
-	<link rel="preload" href="media/panorama_E670F5AB_F58C_3850_41C9_18DC1094692D_0/u/1/0_0.jpg?v=1606148452202" as="image"/>
-	<link rel="preload" href="media/panorama_E670F5AB_F58C_3850_41C9_18DC1094692D_0/d/1/0_0.jpg?v=1606148452202" as="image"/>
-	<link rel="preload" href="media/panorama_E670F5AB_F58C_3850_41C9_18DC1094692D_0/f/1/0_0.jpg?v=1606148452202" as="image"/>
-	<link rel="preload" href="media/panorama_E670F5AB_F58C_3850_41C9_18DC1094692D_0/b/1/0_0.jpg?v=1606148452202" as="image"/>
-	<link rel="preload" href="locale/ko.txt?v=1606148452202" as="fetch" crossorigin="anonymous"/>
-	<meta name="description" content="Virtual Tour"/>
+	<link rel="preload" href="script.js?v=1607869930840" as="script"/>
+	<link rel="preload" href="media/panorama_573C902E_5C53_E1F1_41B2_B8DEB7DE2F91_0/r/3/0_0.jpg?v=1607869930840" as="image"/>
+	<link rel="preload" href="media/panorama_573C902E_5C53_E1F1_41B2_B8DEB7DE2F91_0/l/3/0_0.jpg?v=1607869930840" as="image"/>
+	<link rel="preload" href="media/panorama_573C902E_5C53_E1F1_41B2_B8DEB7DE2F91_0/u/3/0_0.jpg?v=1607869930840" as="image"/>
+	<link rel="preload" href="media/panorama_573C902E_5C53_E1F1_41B2_B8DEB7DE2F91_0/d/3/0_0.jpg?v=1607869930840" as="image"/>
+	<link rel="preload" href="media/panorama_573C902E_5C53_E1F1_41B2_B8DEB7DE2F91_0/f/3/0_0.jpg?v=1607869930840" as="image"/>
+	<link rel="preload" href="media/panorama_573C902E_5C53_E1F1_41B2_B8DEB7DE2F91_0/b/3/0_0.jpg?v=1607869930840" as="image"/>
+	<link rel="preload" href="locale/ko.txt?v=1607869930840" as="fetch" crossorigin="anonymous"/>
+	<script src="scorm.js" type="text/javascript"></script>
+	<meta name="description" content="오드아이팩토리 데모 "/>
 	<meta name="theme-color" content="#FFFFFF"/>
-    <script src="lib/tdvplayer.js?v=1606148452202"></script>
-    <script src="script.js?v=1606148452202"></script>
+    <script src="lib/tdvplayer.js?v=1607869930840"></script>
+    <script src="script.js?v=1607869930840"></script>
     <script type="text/javascript">
         (function()
         {
             var deviceType = TDV.PlayerAPI.mobile ? 'mobile' : 'general';
-            var devicesUrl = {"general":"script_general.js?v=1606148452202","mobile":"script_mobile.js?v=1606148452202"};
+            var devicesUrl = {"mobile":"script_mobile.js?v=1607869930840","general":"script_general.js?v=1607869930840"};
             var url = deviceType in devicesUrl ? devicesUrl[deviceType] : devicesUrl['general'];
             if(typeof url == "object") {
                 var orient = TDV.PlayerAPI.getOrientation();
@@ -52,11 +55,11 @@
 
             var settings = new TDV.PlayerSettings();
             settings.set(TDV.PlayerSettings.CONTAINER, document.getElementById('viewer'));
-            settings.set(TDV.PlayerSettings.WEBVR_POLYFILL_URL, 'lib/WebVRPolyfill.js?v=1606148452202');
-            settings.set(TDV.PlayerSettings.HLS_URL, 'lib/Hls.js?v=1606148452202');
-            settings.set(TDV.PlayerSettings.QUERY_STRING_PARAMETERS, 'v=1606148452202');
+            settings.set(TDV.PlayerSettings.WEBVR_POLYFILL_URL, 'lib/WebVRPolyfill.js?v=1607869930840');
+            settings.set(TDV.PlayerSettings.HLS_URL, 'lib/Hls.js?v=1607869930840');
+            settings.set(TDV.PlayerSettings.QUERY_STRING_PARAMETERS, 'v=1607869930840');
 
-            var devicesUrl = {"general":"script_general.js?v=1606148452202","mobile":"script_mobile.js?v=1606148452202"};
+            var devicesUrl = {"mobile":"script_mobile.js?v=1607869930840","general":"script_general.js?v=1607869930840"};
 
             tour = new TDV.Tour(settings, devicesUrl);
             tour.bind(TDV.Tour.EVENT_TOUR_INITIALIZED, onVirtualTourInit);
@@ -315,13 +318,13 @@
     <style type="text/css">
         html, body { width: 100%; height: 100%; margin: 0; padding: 0; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
 
-        #viewer { background-color: rgba(255,255,255,1); z-index:1; position:absolute; width: 100%; height: 100%; top: 0; }
-        #preloadContainer { z-index:2; position:relative; width:100%; height:100%; opacity:0; transition: opacity 0.5s; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s;}
+        #viewer { z-index:1; position:absolute; width: 100%; height: 100%; top: 0; }
+        #preloadContainer { z-index:2; position:relative; width:100%; height:100%; background-color:rgba(255,255,255,1); transition: opacity 0.5s; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s;}
     </style>
-    <link rel="stylesheet" href="fonts.css?v=1606148452202">
+    <link rel="stylesheet" href="fonts.css?v=1607869930840">
 </head>
 <body>
-    <div id="preloadContainer"><div style="z-index: 4; position: absolute; left: 0%; top: 50%; width: 100.00%; height: 10.00%"><div style="text-align:left; color:#000; "><DIV STYLE="text-align:center;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#777777;font-size:18px;font-family:Arial, Helvetica, sans-serif;">Loading virtual tour. Please wait...</SPAN></DIV><DIV STYLE="text-align:center;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#777777;font-size:18px;font-family:Arial, Helvetica, sans-serif;">created with the trial of 3DVista VT Pro</SPAN></DIV><DIV STYLE="text-align:center;"><A HREF="https://www.3dvista.com" TARGET="_blank" STYLE="text-decoration:none; color:inherit;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#999999;font-size:16px;font-family:Arial, Helvetica, sans-serif;"><U>www.3DVista.com</U></SPAN></A></DIV></div></div></div>
+    <div id="preloadContainer"><div style="z-index: 4; position: absolute; left: 0%; top: 41.08974358974359%; width: 100.00%; height: 19.09%"><div style="text-align:left; color:#000; "><DIV STYLE="text-align:center;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#777777;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:6.41vmin;">오드 아이 팩토리</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:6.41vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#777777;font-size:1.67vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:center;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:2.28vmin;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f3a22e;"><A HREF="http://www.oddeyefactory.com/" TARGET="_blank" STYLE="text-decoration:none; color:inherit;"><SPAN STYLE="font-size:1.48vmin;"><U>http://www.oddeyefactory.com/</U></SPAN></A></SPAN></SPAN></DIV></div></div></div>
     <div id="viewer"></div>
 </body>
 </html>
